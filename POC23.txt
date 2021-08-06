@@ -1,0 +1,9 @@
+SELECT (sal+(sal*5/100)) FROM emp where job="CLERK";
+
+select eno,ename from emp where sal between 2000 and 3000;
+
+select eno, job from emp where deptno=10 or deptno=20;
+
+select eno, mgr where sal>2000 or deptno>10 or job="CLERK";
+
+SELECT (sal+(sal*15/100)) FROM emp where deptno=NULL;

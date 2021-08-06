@@ -1,0 +1,7 @@
+SELECT  * FROM emp AS e LEFT JOIN dept AS d USING (loc) WHERE d.loc="BOSTON";
+
+select count(eno) from emp as e left join dept as d using (dname) where d.dname = "RESEARCH";
+
+select max(sal) from emp as e inner join dept as d using(dname) where dname="SALES";
+
+select doj from emp as e left join dept as d using(dname) where dname IS NULL;

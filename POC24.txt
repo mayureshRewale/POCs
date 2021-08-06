@@ -1,0 +1,8 @@
+SELECT (sal+(sal*7/100)) FROM emp where job="Manager" order by sal DESC;
+
+select eno, ename from emp where sal between 2000 and 3000 order by eno;
+
+select distinct eno, job from emp where dept=10 or deptno = 20;
+
+select distinct job from emp where job!="MANAGER";
+
